@@ -1,0 +1,6 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'promotion/css/showcard.css' %}" />
+<h3>{{card.title}}</h3>
+{% for image in card.imagestocard_set.all %}
+    <img src="../../../../media/card_images/test1.jpg" />
+{% endfor %}
