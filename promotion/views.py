@@ -3,8 +3,9 @@ from django.http import HttpResponse
 from .models import WeddingCard
 
 
-def index(request):
-    return render(request, 'promotion/index.html')
+def index(request, card_id):
+    card = get_object_or_404(WeddingCard, pk=card_id)
+    return render(request, 'promotion/index.html', {'card':card})
 
 def showcard(request, card_id):
     card = get_object_or_404(WeddingCard, pk=card_id)
