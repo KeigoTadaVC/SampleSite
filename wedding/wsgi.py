@@ -8,9 +8,11 @@ https://docs.djangoproject.com/en/2.0/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 from django.core.wsgi import get_wsgi_application
 
+sys.path.append('/home/cieler1/Django/Wedding')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "wedding.settings")
 
 application = get_wsgi_application()
