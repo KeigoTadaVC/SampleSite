@@ -28,7 +28,7 @@ DEBUG = False
 if DEBUG:
     ALLOWED_HOSTS = []
 else:
-    ALLOWED_HOSTS = ['10.0.0.4','k5dl.southeastasia.cloudapp.azure.com']
+    ALLOWED_HOSTS = ['10.0.0.4','127.0.0.1','k5dl.southeastasia.cloudapp.azure.com']
 
 
 # Application definition
