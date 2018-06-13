@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{% static 'promotion/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'promotion/css/restaurant.css' %}">
     <link rel="stylesheet" href="{% static 'promotion/css/fold.css' %}">
+    <link rel="stylesheet" href="{% static 'promotion/css/index.css' %}">
   </head>
   <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
@@ -29,7 +30,7 @@
     <div class="probootstrap-loader"></div>
     <!-- END loader -->
 
-    <section class="pb_cover_v1 cover-bg-black cover-bg-opacity-4 text-center" style="background-image: url({% static 'promotion/images/restaurant/1900x1200/img_1.jpg' %})" id="section-home">
+    <section class="pb_cover_v1 cover-bg-black cover-bg-opacity-4 text-center" style="background-image: url({{ card.card_image.url }})" id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-9  order-md-1">
