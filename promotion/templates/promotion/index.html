@@ -49,7 +49,7 @@
             {% for each_image in card.imagestocard_set.all %}
             <div class="row">
                 <div class="col">
-                    <p>
+                    <!-- <p> -->
                         <div class="cards">
                             <div class="card">
                                 <img src="{{ each_image.image.url }}" class="img-fluid">
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                         </div>
-                    </p>
+                    <!-- </p> -->
                 </div>
             </div>
             {% endfor %}
@@ -98,9 +98,6 @@
     <script src="{% static 'promotion/js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'promotion/js/magnific-popup-options.js' %}"></script>
     <script src="{% static 'promotion/js/fold.js' %}"></script>
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 
     <script src="{% static 'promotion/js/main.js' %}"></script>
 

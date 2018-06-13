@@ -1308,7 +1308,7 @@ a {
   display: block; }
   @media (max-width: 991px) {
     .pb_section {
-      padding: 4em 0; } }
+      padding: 1em 0; } }
   .pb_section.pb_bg-half:before {
     top: 50%;
     content: "";
