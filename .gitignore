@@ -1,3 +1,6 @@
 /media
 /db
 /static
+*.pyc
+*.pyo
+__pycache__
