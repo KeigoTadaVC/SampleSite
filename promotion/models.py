@@ -4,7 +4,7 @@ from PIL import Image
 
 class WeddingCard(models.Model):
     title = models.CharField(max_length=100)
-    card_image = models.ImageField(upload_to='card_image')
+    # card_image = models.ImageField(upload_to='card_image')
     m_name = models.CharField(max_length=100)
     f_name = models.CharField(max_length=100)
     create_date = models.DateTimeField(auto_now_add=True)
@@ -16,8 +16,9 @@ class WeddingCard(models.Model):
 
 class ImagesToCard(models.Model):
     card = models.ForeignKey(WeddingCard, on_delete=models.CASCADE)
+    title = models.CharField(max_length=50,null=True)
     image = models.ImageField(upload_to='card_image')
-    image_comment = models.TextField()
+    comment = models.TextField()
 
     def __str__(self):
         return 'images'
