@@ -4,3 +4,5 @@
 *.pyc
 *.pyo
 __pycache__
+/wedding/settings.py
+/wedding/__pycache__/settings.cpython-36.pyc

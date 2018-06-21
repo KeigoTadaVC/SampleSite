@@ -39,7 +39,7 @@
     {% for each_image in card.imagestocard_set.all %}
     <section class="probootstrap-section-half{% if forloop.counter|divisibleby:"2" %} probootstrap-reverse {% endif %} ">
       <div class="probootstrap-image probootstrap-animate" data-animate-effect="fadeIn" style="background-image: url({{ each_image.image.url }})"></div>
-      <div class="probootstrap-text">
+      <div class="probootstrap-text" style="background-image: url({% static 'promotion/img/pink_back.jpg' %})">
         <div class="probootstrap-inner probootstrap-animate">
           <h1 class="heading">{{ each_image.title }}</h1>
           <p>{{ each_image.comment }}</p>
@@ -49,6 +49,7 @@
     {% endfor %}
 
   </div>
+
   <footer class="probootstrap-footer">
     <div class="container">
       <div class="row">
